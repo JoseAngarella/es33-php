@@ -3,6 +3,9 @@
     if(!isset($_SESSION['registrazioni'])){
         $_SESSION['registrazioni']=array();
     }
+    if(!isset($_GET['eta']) || !isset($_GET['codice_fiscale'])){
+        header("Location:form.html");
+    }
     $_SESSION['registrazioni'][$_GET['codice_fiscale']]=$_GET['eta'];
 ?>
 <!DOCTYPE html>
