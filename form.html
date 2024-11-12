@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="script.php" method="get">
+        <label for="codice_fiscale">codice fiscale:</label>
+        <input type="text" name="codice_fiscale" id="codice_fiscale" minlength="16" maxlength="16" required>
+        <br><br>
+        <label for="eta">eta:</label>
+        <input type="text" name="eta" id="eta" min="1" max="150" required>
+        <br><br>
+        <input type="submit" value="invia">
+    </form>
+
+</body>
+
+</html>
+
+
+<!-- Creare una pagina form.html contenente una form con due elementi:
+- un input type text che rappresenta il codice fiscale
+- un input type number che rappresenta l'età
+- un pulsante per inviare la form
+La form deve essere inviata alla pagina script.php tramite metodo GET. -->
